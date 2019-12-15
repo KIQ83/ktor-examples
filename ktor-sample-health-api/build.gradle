@@ -12,8 +12,8 @@ repositories {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     
-    implementation "io.ktor:ktor-server-core:1.2.6"
-    implementation "io.ktor:ktor-server-netty:1.2.6"
+    implementation "io.ktor:ktor-server-core:$ktorVersion"
+    implementation "io.ktor:ktor-server-netty:$ktorVersion"
 }
 
 compileKotlin {
