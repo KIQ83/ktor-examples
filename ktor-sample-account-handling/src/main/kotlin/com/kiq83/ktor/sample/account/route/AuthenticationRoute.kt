@@ -17,7 +17,7 @@ fun Route.auth(authenticationService: AuthenticationService) {
 
     route("auth") {
 
-        post("sign_up") {
+        post("sign-up") {
             val credentials = call.receive(Credentials::class)
             try {
                 val accountId = authenticationService.signUp(credentials.email, credentials.password)
@@ -28,7 +28,7 @@ fun Route.auth(authenticationService: AuthenticationService) {
             }
         }
 
-        post("sign_in") {
+        post("sign-in") {
             val credentials = call.receive(Credentials::class)
 
             try {

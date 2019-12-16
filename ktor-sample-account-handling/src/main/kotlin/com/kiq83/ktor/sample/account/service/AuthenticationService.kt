@@ -8,7 +8,7 @@ class AuthenticationService(
     private val authenticationTokenService: AuthenticationTokenService
 ) {
 
-    val credentialsMap = mutableMapOf<String, AuthCredentialInfo>()
+    private val credentialsMap = mutableMapOf<String, AuthCredentialInfo>()
 
     fun signUp(email: String, password: String): AccountId {
         if (credentialsMap[email] != null) {
